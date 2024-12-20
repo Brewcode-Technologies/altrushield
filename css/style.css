@@ -2043,8 +2043,11 @@ a{font-weight: 500;}
 .my-contact .right-content {
   background: var(--prime-one);
   max-width: 410px;
-  padding: 47px 54px;
+  padding: 47px 30px;
   margin-left: auto;
+}
+.email-hover:hover{
+  color: var(--prime-two) !important;
 }
 .my-contact .right-content h6{
   font-size: 32px;

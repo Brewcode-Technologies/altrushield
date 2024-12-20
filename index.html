@@ -18,7 +18,7 @@
     <meta name="msapplication-navbutton-color" content="#6dbfb8" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#6dbfb8" />
     <title></title>
-    <link rel="icon" type="image/png" sizes="72x33" href="images/fabicon.png" />
+    <link rel="icon" type="image/png" sizes="72x33" href="" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
     <link
       rel="stylesheet"
@@ -172,57 +172,64 @@
           </div>
         </div>
       </div>
-
+   
       <div
-        class="banner_slider_one mb-120 lg-mb-80 tran5s"
-        id="banner_slider_one"
-      >
-        <div class="iten">
-          <div
-            class="banner-one tran5s pt-220 pb-140 md-pt-100 md-pb-80"
-            style="
-              background: linear-gradient(
-                  90deg,
-                  #7b7b7b 0%,
-                  rgba(84, 81, 81, 0.73) 23.44%,
-                  rgba(27, 25, 25, 0) 100%
-                ),
-                url('images/banner/home-page-banner-1.jpg') center center
-                  no-repeat;
-            "
-          >
-            <div class="container">
-              <div class="row">
-                <div class="banner-rapper-one ms-auto position-relative">
-                  <img
-                    src="images/shape/shape-01.svg"
-                    alt=""
-                    class="shapes shape-01"
-                  />
-                  <img
-                    src="images/shape/shape-02.svg"
-                    alt=""
-                    class="shapes shape-02"
-                  />
-                  <div class="top_heading mb-30">
-                    <span class="span-one">Digital</span>
-                  </div>
-                  <div class="mb-60 md-mb-30">
-                    <h1 class="h1 color-two fw-700">
-                      We are <br />
-                      Digital Marketing <br />
-                      Creative Gigg
-                    </h1>
-                  </div>
-                  <div class="">
-                    <a href="" class="custom-btn-one">Find Solution</a>
-                  </div>
-                </div>
-              </div>
+  class="banner_slider_one mb-120 lg-mb-80 tran5s"
+  id="banner_slider_one"
+>
+  <div class="iten">
+    <div
+      class="banner-one tran5s pt-220 pb-140 md-pt-100 md-pb-80"
+      style="
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+      "
+    >
+      <!-- Blurred Video Background -->
+      <video autoplay muted loop playsinline style="
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        z-index: -1;
+      ">
+        <source src="videos/home-page-video.mp4" type="video/mp4" />
+      </video>
+
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+      "></div>
+
+      <div class="container text-center" style="position: relative; z-index: 1;">
+        <div class="row">
+          <div class="banner-rapper-one ms-auto position-relative">
+            <div class="mb-60 md-mb-30">
+              <h1 class="h1 color-two fw-700">
+                Digital Marketing <br />
+              </h1>
+            </div>
+            <div class="">
+              <a href="" class="custom-btn-one">Find Solution</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+
       <section
         class="about-one mb-180 lg-mb-80 position-relative tran5s wow fadeInUp"
       >
@@ -624,11 +631,16 @@
                         <a href=""><i class="fab fa-twitter"></i></a>
                       </li>
                     </ul>
-                    <p class="pt-30 pb-10 md-pt-10">( 800 ) 160-616481</p>
-                    <p><a class="email-link" href="">needhelp@site.com</a></p>
+                    <p class="pt-30 pb-10 md-pt-10">
+                      <a class="email-link" href="tel:+19254900703">+19254900703</a>
+                    </p>
+                    <p>
+                      <a class="email-link" href="mailto:servicedesk@altrushield.com">servicedesk@altrushield.com</a>
+                    </p>
+                    
                     <div class="footer-shape mt-20"></div>
                     <p class="mt-20">
-                      185 10h Street, Office 272 Berlin, De 21562
+                      1722 Westwood dr Concord CA 94521
                     </p>
                   </div>
                 </div>
