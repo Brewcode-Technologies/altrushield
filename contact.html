@@ -221,7 +221,7 @@
                 </div>
               </div>
               <div class="my-form position-relative">
-                <form method="POST" action="./php/send_mail.php">
+                <form method="POST" action="php/send_mail.php" id="contactForm">
                   <div class="row g-lg-4 ms-auto">
                     <div class="col-lg-6 mb-60 position-relative">
                       <input class="input-one" type="text" name="name" required />
@@ -444,6 +444,27 @@
       <script src="vendor/nice-select/jquery.nice-select.min.js"></script>
       <script src="vendor/wow.min.js"></script>
       <script src="js/theme.js"></script>
+      
     </div>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = new FormData(this);
+
+    fetch('/php/send_mail.php', {
+        method: 'POST',
+        body: form
+    })
+    .then(response => response.json()) // Expecting JSON response
+    .then(data => {
+        alert(data.message); // Show success or error message
+    })
+    .catch(error => {
+        alert('An error occurred. Please try again.');
+    });
+});
+
+      </script>
   </body>
 </html>
